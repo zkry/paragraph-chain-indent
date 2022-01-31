@@ -1,0 +1,15 @@
+* paragraph-chain-indent
+
+  This package provides a simple minor mode called
+  =paragraph-chain-indent-mode=.  This mode adds overlays to your
+  buffer according to certain rules so that short paragraphs that are
+  separated by a blank line are displayed as extra indented.
+
+
+** Customizations
+
+   - =paragraph-chain-indent-indent-amount= : this controls the amount
+     of indentation each chained paragraph should have.
+   - =paragraph-chain-indent-independent-paragraph-size= : Any
+     paragraph longer than this size won't be chained to the previous
+     paragraphs.
