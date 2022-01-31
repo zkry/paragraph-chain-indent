@@ -5,6 +5,29 @@
   buffer according to certain rules so that short paragraphs that are
   separated by a blank line are displayed as extra indented.
 
+  For example:
+
+#+begin_quote
+This is a paragraph. The following lines will be chained to this one.
+
+Line one...
+
+"Line two"
+
+"Line three"
+#+end_quote
+
+  will show up as follows:
+
+#+begin_quote
+This is a paragraph. The following lines will be chained to this one.
+    Line one...
+    "Line two"
+    "Line three"
+#+end_quote
+
+  The mode will not chain long paragraphs or if there are more than
+  one blank line between.
 
 ** Customizations
 
