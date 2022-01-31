@@ -37,7 +37,7 @@ This is a paragraph. The following lines will be chained to this one.
 
 *** spacemacs
     #+begin_src
-    dotspacemacs-additional-packages '((awqat :location (recipe
+    dotspacemacs-additional-packages '((paragraph-chain-indent :location (recipe
                                                          :fetcher github
                                                          :repo "zkry/paragraph-chain-indent")))
     #+end_src
@@ -45,7 +45,7 @@ This is a paragraph. The following lines will be chained to this one.
 *** straight
     #+begin_src lisp
       (straight-use-package
-       '(example :type git :host github :repo "zkry/paragraph-chain-indent"))
+       '(paragraph-chain-indent :type git :host github :repo "zkry/paragraph-chain-indent"))
     #+end_src
 
 ** Customizations
