@@ -1,5 +1,6 @@
 * paragraph-chain-indent
 
+
   This package provides a simple minor mode called
   =paragraph-chain-indent-mode=.  This mode adds overlays to your
   buffer according to certain rules so that short paragraphs that are
@@ -28,6 +29,24 @@ This is a paragraph. The following lines will be chained to this one.
 
   The mode will not chain long paragraphs or if there are more than
   one blank line between.
+
+** Installation
+
+   Currently this isn't on any package manager so you must add this
+   file to you load path or link to this repository directly. Example:
+
+*** spacemacs
+    #+begin_src
+    dotspacemacs-additional-packages '((awqat :location (recipe
+                                                         :fetcher github
+                                                         :repo "zkry/paragraph-chain-indent")))
+    #+end_src
+
+*** straight
+    #+begin_src lisp
+      (straight-use-package
+       '(example :type git :host github :repo "zkry/paragraph-chain-indent"))
+    #+end_src
 
 ** Customizations
 
